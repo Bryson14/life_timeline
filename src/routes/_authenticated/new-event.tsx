@@ -44,16 +44,16 @@ function RouteComponent() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const {
-      // data: { user },
-    } = await supabase.auth.getUser();
-    // if (!user) {
-    //   form.setError("root.serverError", {
-    //     type: "manual",
-    //     message: "You must be logged in to create an event.",
-    //   });
-    //   return;
-    // }
+    // const {
+    //   // data: { user },
+    // } = await supabase.auth.getUser();
+    // // if (!user) {
+    // //   form.setError("root.serverError", {
+    // //     type: "manual",
+    // //     message: "You must be logged in to create an event.",
+    // //   });
+    // //   return;
+    // // }
     const { error } = await supabase
       .from("events")
       .insert([{ ...values, user_id: "1d8ba865-79cb-4696-8315-99c0eab567da" }]);
