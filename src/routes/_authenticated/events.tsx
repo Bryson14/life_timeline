@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
-import { Database } from '@/lib/database.types'
+import type { Database } from '@/lib/database.types'
 import {
   Table,
   TableBody,
