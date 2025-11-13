@@ -59,3 +59,5 @@ When asked to generate content (e.g., sample event data, event descriptions, or 
 - use tailwind css v4
 - use Shadcn components 
 - Don't use explicit colors in the tailwind, use the shadcn classes, like primary secondary muted etc.
+- Use pnpm and pnpm dlx instead of npm and npx
+- Use tanstack router data fetching to cache based on the url
