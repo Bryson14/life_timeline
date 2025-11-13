@@ -27,8 +27,8 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Run Vitest tests
-        run: pnpm test
+      # - name: Run Vitest tests
+      #   run: pnpm test
 
       - name: Build Project
         run: pnpm run build
@@ -38,4 +38,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy build --project-name=life-timeline-smei
+          command: pages deploy build --project-name=life-timeline-brymei

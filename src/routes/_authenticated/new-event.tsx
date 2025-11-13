@@ -45,7 +45,7 @@ function RouteComponent() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const {
-      data: { user },
+      // data: { user },
     } = await supabase.auth.getUser();
     // if (!user) {
     //   form.setError("root.serverError", {
